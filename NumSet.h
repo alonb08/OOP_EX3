@@ -30,7 +30,7 @@ public:
 	void Del(int num);
 	int biggerThen(int num) const;
 	bool compare(int a, int b)const;
-	NumSet& operator+=(int num) { this->insert(num); }
+	NumSet& operator+=(int num) { this->insert(num); return(*this); }
 	NumSet& operator+=(const NumSet&  Other);
 	NumSet& operator ++();
 	NumSet& operator --();
